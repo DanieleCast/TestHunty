@@ -22,7 +22,7 @@ def get_json_gcs(bucket_name, file_name):
     BUCKET = client.get_bucket(bucket_name)
     # get the blob
     blob = BUCKET.get_blob(file_name)
-    #Listing ALL the files in the bucket
+
     files = client.list_blobs(bucket_name)
     print(f'Tus archivos en el {bucket_name} son:')
     # Note: The call returns a response only when the iterator is consumed.
